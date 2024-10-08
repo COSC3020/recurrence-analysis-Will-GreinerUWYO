@@ -39,7 +39,7 @@ For each call of mystery, the for loop with k is called $n^2$ times, the for loo
 
 So the recurrence relation can be written as follows: $3T(n/3) + n^5$
 
-### Time Complexity
+## Time Complexity
 
 To find the time complexity, we find a form after a few iterations
 $3(3T(n/9) + (n/3)^5) + n^5 = 9T(n/9) + 3(n/3)^5 + n^5 $
@@ -50,7 +50,7 @@ In each case, the greatest power is $n^5$ so considering the rest of the functio
 
 The time complexity of this function is $O(n^5)$
 
-#### Help and Plagarism Statement
+## Help and Plagarism Statement
 
 Help from Daniel Collins with knowing the expected form of the proof, since he took the class last semester.
 
