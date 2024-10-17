@@ -50,14 +50,13 @@ So we can write out a geometric series to represent this pattern
 
 $T(n) = 3^i(n/3^i) + 3^i-1(n/3^i-1)^5 + ... + n^5$
 
+$3^i(n/3^i)$ is always less than $n^5$, as $n$ is always less than n^5 when only multiplied by a constant.
+$3^i-1(n/3^i-1)^5$ is always less than $n^5$ as $n/3^i-1 < n$, and since multiplying $3^i-1$ and $n/3(i-1)$ does not get back to n, n^5 will always be greater than $3^i-1(n/3^i-1)^5$
 
-
-In each case, the greatest power is $n^5$ so considering the rest of the function is the worst case, we get our $O$ worst case:
-
-The time complexity of this function is $O(n^5)$
+For all cases, the worst case is always $n^5$, so the time complexity of this function is $O(n^5)$
 
 ## Help and Plagarism Statement
 
-Help from Daniel Collins with knowing the expected form of the proof, since he took the class last semester.
+Help from Daniel Collins with knowing the expected form of the proof, since he took the class last semester. Michael Stoll got me on the right track with proving the geometric series.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
