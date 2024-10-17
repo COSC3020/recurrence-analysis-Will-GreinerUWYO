@@ -46,6 +46,12 @@ $3(3T(n/9) + (n/3)^5) + n^5 = 9T(n/9) + 3(n/3)^5 + n^5 $
 
 $9(3T(n/27) + (n/9)^5) + n^5 + 3(n/3)^5 = 27T(n/27) + 9(n/9)^5 + 3(n/3)^5 + n^5$
 
+So we can write out a geometric series to represent this pattern
+
+$T(n) = 3^i(n/3^i) + 3^i-1(n/3^i-1)^5 + ... + n^5$
+
+
+
 In each case, the greatest power is $n^5$ so considering the rest of the function is the worst case, we get our $O$ worst case:
 
 The time complexity of this function is $O(n^5)$
